@@ -1,0 +1,29 @@
+{
+  "name": "pesties-mcp",
+  "version": "3.2.0",
+  "description": "MCP server for Pesties.au pest control booking (Gold Coast, Logan, South Brisbane, Australia)",
+  "main": "src/worker.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev --ip 0.0.0.0 --port 8787"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pest-control",
+    "booking",
+    "cloudflare-workers"
+  ],
+  "author": "Pesties.au",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JovianNights/pesties-mcp.git"
+  },
+  "homepage": "https://mcp.pesties.au",
+  "devDependencies": {
+    "wrangler": "^3.100.0"
+  }
+}

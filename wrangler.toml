@@ -1,0 +1,18 @@
+name = "pesties-mcp"
+main = "src/worker.js"
+compatibility_date = "2024-11-01"
+
+# Cloudflare KV namespace used for booking idempotency and rate limiting.
+# For local development / Docker, wrangler will use a local emulated KV so
+# no real namespace is required. For production, create one and paste its
+# id below:
+#
+#   npx wrangler kv:namespace create BOOKINGS_KV
+#
+[[kv_namespaces]]
+binding = "BOOKINGS_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Secrets (HMAC_SECRET, WP_SHARED_SECRET) are NOT declared here.
+# For local dev, put them in .dev.vars (see .dev.vars.example).
+# For production, use `npx wrangler secret put HMAC_SECRET` etc.
